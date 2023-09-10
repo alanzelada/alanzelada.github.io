@@ -1,0 +1,743 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0);
+    opacity: 0.5;
+  }
+
+header{
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+nav{
+    max-width: 950px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+nav .izquierda .normal{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    display: flex;
+}
+
+nav .izquierda .alternativo{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    display: none;
+}
+
+nav .centro{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    max-width: 500px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .centro .iconosNav{
+    display: none;
+}
+
+nav .centro h3{
+    color: white;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+nav .centro h3:hover{
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+nav .centro img{
+    display: none;
+    height: 20px;
+}
+
+
+nav .derecha .botonContact{
+    width: 150px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav .derecha .botonContact h3{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 255);
+    font-weight: 600;
+}
+
+nav .derecha .botonContact img{
+    display: none;
+    height: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+}
+
+.home #videoFondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+.home .contenidoHome{
+    max-width: 950px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.home .contenidoHome .nombre{
+    font-family: 'Orbitron', sans-serif;
+    width: 50%;
+    height: 200px;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.home .contenidoHome .nombre h1{
+    font-weight: 500;
+    font-size: 5rem;
+    color: white;
+}
+
+.home .contenidoHome .descripcion{
+    display: flex;
+    flex-direction: column;
+    max-width: 475px;
+    width: 50%;
+    height: 200px;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.home .contenidoHome .descripcion p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.home .contenidoHome .descripcion .botonMas{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.home .contenidoHome .descripcion .botonMas h2{
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.home .contenidoHome .descripcion .botonMas h2:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.home .contenidoHome .descripcion .botonMas img{
+    width: 50px;
+    height: 30px;
+}
+
+.aboutMe{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+
+.aboutMe h1{
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-top: 20vh;
+    margin: auto;
+    margin-left: 15%;
+}
+
+.aboutMe .contenidoAboutMe{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutMe .contenidoAboutMe .izquierdaAM{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe .contenidoAboutMe .izquierdaAM p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.aboutMe .contenidoAboutMe .izquierdaAM .iconos{
+    max-width: 300px;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutMe .contenidoAboutMe .izquierdaAM #html, #css{
+    width: 40px;
+}
+
+.aboutMe .contenidoAboutMe .izquierdaAM #javascript{
+    width: 40px;
+}
+
+.aboutMe .contenidoAboutMe .izquierdaAM #php{
+    width: 40px;
+}
+
+.aboutMe .contenidoAboutMe .derechaAM{
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe .contenidoAboutMe .derechaAM img{
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.aboutMe .contenidoAboutMe .derechaAM img:hover{
+    filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+.projects{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects .palabraFondo{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .palabraFondo h1{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 255, 0.3);
+    font-size: 25rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+.projects .titulo{
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-top: 20vh;
+    margin: auto;
+    margin-left: 15%;
+    margin-bottom: 5vh;
+}
+
+.projects .proyectos{
+    margin: auto;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    z-index: 2;
+}
+
+.projects .proyectos .bingo{
+    background:  linear-gradient(90deg, rgba(0,0,0, 0.5) 0%, rgba(0,0,0,0.51) 100%), url('images/bingo.png');
+    border-radius: 10px 0 0 10px;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.projects .proyectos .bingo:hover{
+    background:  linear-gradient(90deg, rgba(0,0,0, 0) 0%, rgba(0,0,0,0.1) 100%), url('images/bingo.png');
+    background-size: cover;
+    filter: grayscale(0%);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.projects .proyectos .hoteleria{
+    background:  linear-gradient(90deg, rgba(0,0,0, 0.5) 0%, rgba(0,0,0,0.51) 100%), url('images/hoteleria.png');
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.projects .proyectos .hoteleria:hover{
+    background:  linear-gradient(90deg, rgba(0,0,0, 0) 0%, rgba(0,0,0,0.1) 100%), url('images/hoteleria.png');
+    background-size: cover;
+    filter: grayscale(0%);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
+.projects .proyectos .aprendeYa{
+    background-image: url('images/aprendeYa.png');
+    background:  linear-gradient(90deg, rgba(0,0,0, 0.5) 0%, rgba(0,0,0,0.51) 100%), url('images/aprendeYa.png');
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.projects .proyectos .aprendeYa:hover{
+    background:  linear-gradient(90deg, rgba(0,0,0, 0) 0%, rgba(0,0,0,0.1) 100%), url('images/aprendeYa.png');
+    background-size: cover;
+    filter: grayscale(0%);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
+.projects .proyectos h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
+    text-shadow: -2px -2px 8px black;
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form{
+    height: 65vh;
+    margin-top: 20vh;
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact form h2{
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    font-size: 3.5rem;
+    font-weight: 600;
+    display: flex;
+    align-self: center;
+}
+
+.contact form .cortos{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 200px;
+    width: 90%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.contact form .mediano{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 250px;
+    width: 90%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.contact form .grande{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 3000px;
+    width: 90%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px solid white;
+    font-size: 15px;
+    height: 80px;
+    display: flex;
+    text-align:start;
+}
+
+.contact form .enviar{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    max-width: 80px;
+    width: 50%;
+    padding: 3px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.contact form .enviar:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.contact form input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form textarea::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+.contact .socialMedia{
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .socialMedia img{
+    height: 30px;
+}
+
+
+
+
+
+/*medias queries para adaptar la pagina a smartphones*/
+
+@media only screen and (max-width: 1200px){
+    .home .contenidoHome .nombre h1{
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    nav .izquierda h2{
+        font-size: 20px;
+    }
+
+    nav .izquierda .alternativo{
+        display: flex;
+    }
+
+    nav .izquierda .normal{
+        display: none;
+    }
+
+    nav .centro{
+        max-width: 300px;
+        width: 40%;
+    }
+
+    nav .centro .iconosNav{
+        display: flex;
+    }
+
+    nav .centro .links{
+        display: none;
+    }
+
+    nav .centro img{
+        display: flex;
+    }
+
+
+    nav .derecha h3{
+        display: none;
+    }
+
+    nav .derecha .botonContact{
+        width: max-content;
+    }
+
+    nav .derecha .botonContact img{
+        display: flex;
+    }
+
+    .home .contenidoHome{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home .contenidoHome .nombre{
+        height: max-content;
+        margin-bottom: 20px;
+    }
+
+    .home .contenidoHome .nombre h1{
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
+    .home .contenidoHome .descripcion{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .home .contenidoHome .descripcion p{
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .home .contenidoHome .descripcion .botonMas{
+        width: max-content;
+        padding: 8px;
+    }
+
+    .home .contenidoHome .descripcion .botonMas h2{
+        font-size: 2.5vh;
+    }
+
+    .home .contenidoHome .descripcion .botonMas img{
+        width: 30px;
+        height: 15px;
+    }
+
+    .aboutMe h1{
+        font-family: 'Poppins', sans-serif;
+        color: blue;
+        font-size: 2.5rem;
+        padding-top: 15vh;
+        margin: auto;
+        margin-left: 10%;
+    }
+
+    .aboutMe .contenidoAboutMe{
+        width: 100%;
+    }
+
+    .aboutMe .contenidoAboutMe .derechaAM{
+        display: none;
+    }
+
+    .aboutMe .contenidoAboutMe .izquierdaAM{
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .aboutMe .contenidoAboutMe .izquierdaAM p{
+        font-size: 0.9rem;
+    }
+    
+    .aboutMe .contenidoAboutMe .izquierdaAM #html, #css{
+        width: 30px;
+    }
+
+    .aboutMe .contenidoAboutMe .izquierdaAM #javascript{
+        width: 30px;
+    }
+
+    .aboutMe .contenidoAboutMe .izquierdaAM #php{
+        width: 30px;
+    }
+
+    .aboutMe .contenidoAboutMe .izquierdaAM .iconos{
+        padding-top: 20px;
+    }
+
+    .projects .titulo{
+        font-family: 'Poppins', sans-serif;
+        color: blue;
+        font-size: 2.5rem;
+        padding-top: 15vh;
+        margin-left: 10%;
+        margin-bottom: 5vh;
+    }
+
+    .projects .proyectos{
+        margin: auto;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 20px;
+        z-index: 2;
+    }
+
+    .projects .proyectos .bingo{
+        border-radius: 10px 10px 0 0;
+        height: 110px;
+        width: 250px;
+        
+    }
+
+    .projects .proyectos .hoteleria{
+        height: 110px;
+        width: 250px;
+    }
+
+    .projects .proyectos .aprendeYa{
+        border-radius: 0 0 10px 10px;
+        height: 110px;
+        width: 250px;
+    }
+
+    .projects .proyectos h3{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
