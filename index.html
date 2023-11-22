@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alan Zelada</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="izquierda">
+                <a href="#home">
+                <h2 class="normal">ALAN</h2>
+                <h2 class="alternativo">AZ</h2>
+            </a>
+            </div>
+            <div class="centro">
+                <a href="#home" class="links"><h3>Home</h3></a>
+                <a href="#aboutMe" class="links"><h3>About me</h3></a>
+                <a href="#projects" class="links"><h3>Projects</h3></a>
+                
+                <a href="#home" class="iconosNav"><img src="images/home.svg" alt=""></a>
+                <a href="#aboutMe" class="iconosNav"><img src="images/user.svg" alt=""></a>
+                <a href="#projects" class="iconosNav"><img src="images/tools.svg" alt=""></a>
+                
+            </div>
+            <div class="derecha">
+                <div class="botonContact" id="botonContact">
+                    <a href="#contact"><h3 id="contacto">Contact</h3>
+                    <img id="botonContact" src="images/chat.svg" alt="">
+                </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="home" id="home">
+        <video autoplay muted loop id="videoFondo">
+            <source src="videos/fcs804 (1) (1) (1).mp4" type="video/mp4">
+        </video>
+        
+        <div class="contenidoHome">
+            <div class="nombre">
+                <h1>ALAN</h1>
+                <h1>ZELADA</h1>
+            </div>
+
+            <div class="descripcion">
+                <p>My name is Alan, I'm a 19 year old guy. I want to boost myself in development's world and I am currently studying last year's programming technicature in secondary level.</p>
+                <div class="botonMas">
+                    <a href="#aboutMe"><h2>See more</h2></a>
+                    <h2 class="flecha">></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="aboutMe" id="aboutMe">
+        <h1>About me</h1>
+
+        <div class="contenidoAboutMe">
+            <div class="izquierdaAM">
+                <div class="textoAM">
+                <p>I'll try you to get to know me a little bit more right here! I'm studying in the last year of programming technicature in secondary level now. This year is mainly based on projects and more projects in order to earn experience. I can say that the main language I am using right now is Javascript, HTML and CSS. Even though the last ones are not considered programming languages, it's not irrelevant. Also, I've been working with PHP and SQL to make the databases connections and when I started using forms too. Obviously I am open to learn new languages, libraries, frameworks and expand my knowledge.
+                    I have also a mid-level English so I can communicate in this language in a normal way. That's the reason why I tried to make the whole page in English. Thank you for visiting my page!</p>
+            </div>
+                <div class="iconos">
+                    <img src="images/html.svg" alt="" id="html" >
+                    <img src="images/css.svg" alt="" id="css" >
+                    <img src="images/javascript.svg" alt="" id="javascript" >
+                    <img src="images/php.svg" alt="" id="php" >
+                </div>
+            </div>
+            <div class="derechaAM">
+                <img src="images/alan2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="palabraFondo">
+            <h1>Projects</h1>
+        </div>
+
+        <h1 class="titulo">Projects</h1>
+        <div class="proyectos">
+            <div class="casino" id="casino">
+                <h3>Casino</h3>
+            </div>
+            <div class="aprendeYa" id="aprendeYa">
+                <h3>JuegaYa</h3>
+            </div>
+            <div class="cmw" id="cmw">
+                <h3>CMW</h3>
+            </div>
+        </div>
+
+        <div class="modalCMW" id="modalCMW">
+            <div class="img"></div>
+            <div class="texto">
+                <p>CMW is a project that we made for school olympics. The objective was creating a software in order to send alerts, talking in a medical way.
+                    And then we made it.
+                    Four shcoolmates created "Clinica Médica Wilde" in six days.
+                    In this platform we have 3 logins (Patient, Doctor and Admin). As a Patient we can book an appointment with an specific area and an specific doctor. Obviously, we can send alerts (green, yellow and red) depending on risk or damage. Also we can see appointments we reserved and our credential.
+                    Doctors can see alerts, accept them and easily see them as a card with the color of the alert and info inside. And see the appointments assigned as a doctor.
+                    Finally, an admin can see Doctors and Patients registered in the database, and the most importan section is "Métricas" (metrics) where we can see how many alerts where send and attended using graphics and tables.
+                    This was made using HTML, CSS, PHP and SQL.</p>
+                    <p>Here you have the logins:</p>
+                    <p><a href="http://clinicamedicawilde.wuaze.com/Pacientes/" target="_blank">Patients</a>, <a href="http://clinicamedicawilde.wuaze.com/Medicos/" target="_blank">Doctors</a> and <a href="http://clinicamedicawilde.wuaze.com/Admin/" target="_blank">Admins</a></p>
+            </div>
+            <div class="cerrar">
+                <p id="closeButton"><b>X</b></p>
+            </div>
+        </div>
+
+        <div class="modalJuegaYa" id="modalJuegaYa">
+            <div class="img"></div>
+            <div class="texto">
+                <p>JuegaYa is a platform we made thinking in kindergarden's children. This was created for children in order for them to learn letters, numbers and basic things in a funny way, and also for them to getting into computers and know how to use basic functionalities as using a mouse, making click, drag and hover while they are learning neccesary things. As this was created to argentine children the page is all in Spanish but we also created the section of games in English for them to get in touch with English in a early age.</p>
+                <p>This was made in HTML, CSS and pure Javascript using no libraries to be heavy in order to work in any computer.</p>
+            </div>
+            <div class="cerrar">
+                <p id="closeButtonJuegaYa"><b>X</b></p>
+            </div>
+        </div>
+
+        <div class="modalCasino" id="modalCasino">
+            <div class="img"></div>
+            <div class="texto">
+                <p>Casino is a project that we made with around 12 participants. It consists on a real casino simulation based on 8 differents games as Slots, Bingo, Rasca y Gana, Black Jack, Ruleta, Dados, Vasos and Carta Mayor. They are all made mainly in Javascript becasue they'all have many logics. Then, we made the front using HTML and CSS because it was the only way we had due to it was a webpage. And finally we connected this to the database using SQL queries, being SQL the language used to create the database and being able to have points, earn points and loose.</p>
+                <p>Also here you have the <a href="https://github.com/MareanoSG/Casino-Main-Page.git" target="_blank">Casino repository</a> in order to download or see the code.</p>
+            </div>
+            <div class="cerrar">
+                <p id="closeButtonCasino"><b>X</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <form action="https://formspree.io/f/mjvqrnkd" method="POST">
+            <h2>Contact</h2>
+            <input type="text" class="cortos" placeholder="Name" name="nombre">
+            <input type="text" class="cortos" placeholder="Surname" name="apellido">
+            <input type="email" class="mediano" placeholder="Mail" name="mail">
+            <textarea name="asunto" class="grande" placeholder="Message" cols="30" rows="10"></textarea>
+            <input type="submit" class="enviar" value="Send">
+        </form>
+
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/alan_zelada/" target="_blank"><img src="images/instagram.svg" alt=""></a>
+            <a href="https://twitter.com/alanzeladaa" target="_blank"><img src="images/X.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/alan-zelada-aaa049248/" target="_blank"><img src="images/linkedin.svg" alt=""></a>
+            <a href="https://github.com/alanzelada" target="_blank"><img src="images/github.svg" alt=""></a>
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 500,
+        })
+
+      </script>
+      <script src="portfolioAlan.js"></script>
+</body>
+</html>
